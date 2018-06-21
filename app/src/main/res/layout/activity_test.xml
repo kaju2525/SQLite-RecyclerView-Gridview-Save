@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".view.TestActivity">
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:gravity="center_vertical"
+        android:text="add" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rlDateDeliveryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#e4e4e4"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Today"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvNoOfDeliveries"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="2 Deliveries"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="delete"
+                android:onClick="delete"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llRootLayout"
+            android:layout_below="@+id/rlDateDeliveryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+       <LinearLayout
+           android:layout_marginTop="5dp"
+           android:layout_below="@+id/add"
+           android:id="@+id/ll_root"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+
+
+
+
+
+</LinearLayout>
